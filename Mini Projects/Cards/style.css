@@ -1,0 +1,81 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #252542);
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    height: 415px;
+    width: 280px;
+    padding: 20px;
+    background: linear-gradient(135deg, #7c5cff, #22d3ee);
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+  .media{
+    background: linear-gradient(135deg, #0f1220, #1f2a44);
+    height: 150px;
+    border-radius: 20px;
+  }
+  .new{
+    background: #22d3ee;
+    display: inline-flex;
+    margin-top: 15px;
+    margin-left: 15px;
+    border-radius: 100px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 2px 7px;
+  }
+  .title{
+    color: white;
+  }
+  .subtitle{
+    color: #bbb;
+  }
+  .chips{
+    display: flex;
+    gap: 12px;
+    
+  }
+  .chip{
+    color: white;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 6px 10px;
+    border-radius: 100px;
+    font-size: 13px;
+  }
+  p{
+    color: #bbb;
+  }
+  .row{
+    display: flex;
+    justify-content: space-between;
+  }
+  .price{
+    font-size: 18px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #22d3ee, #7c5cff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .btn{
+    background: linear-gradient(135deg, #7c5cff, #22d3ee);
+    border: none;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .btn:hover{
+    background: linear-gradient(135deg, #8871e4, #7be1f1);
+    
+  }
