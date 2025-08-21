@@ -1,0 +1,57 @@
+
+.box {
+  height: 200px;
+  width: 200px;
+  display: inline-flex;
+}
+#one {
+  background: linear-gradient(to right, red 20%, green 40%, yellow);
+  color: white;
+}
+#two {
+  background: linear-gradient(45deg, red, blue, aqua);
+  color: white;
+}
+#three {
+  background: repeating-linear-gradient(
+    45deg,
+    red,
+    red 20px,
+    yellow 20px,
+    yellow 40px
+  );
+  color: white;
+}
+#four {
+  background: radial-gradient(ellipse at center, pink, purple,black);
+  color: white;
+}
+#five {
+  background: radial-gradient(circle at top left, blue, red,green,purple,aqua);
+  color: white;
+}
+#six{
+    background: radial-gradient( red,yellow,green);
+    color: white;
+}
+#seven{
+    background: repeating-radial-gradient(
+    red,
+    red 20px,
+    yellow 20px,
+    yellow 40px
+  );
+  color: white;
+}
+#eight{
+    background: conic-gradient(red,yellow,aqua,green);
+    color: white;
+}
+#nine{
+    background: repeating-conic-gradient(
+        red 0deg 20deg,
+        yellow 20deg 40deg
+      );
+      color: white;
+}
+
