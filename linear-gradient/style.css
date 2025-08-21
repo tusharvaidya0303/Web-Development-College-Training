@@ -5,11 +5,11 @@
   display: inline-flex;
 }
 #one {
-  background: linear-gradient(to right, red 20%, green 40%, yellow);
+  background: linear-gradient(to right, red 10%, orange 40%, aqua);
   color: white;
 }
 #two {
-  background: linear-gradient(45deg, red, blue, aqua);
+  background: linear-gradient(45deg, red, yellow, aqua);
   color: white;
 }
 #three {
@@ -27,7 +27,7 @@
   color: white;
 }
 #five {
-  background: radial-gradient(circle at top left, blue, red,green,purple,aqua);
+  background: radial-gradient(circle at top left, red,orange,yellow,aqua);
   color: white;
 }
 #six{
@@ -41,7 +41,7 @@
     yellow 20px,
     yellow 40px
   );
-  color: white;
+  color: black;
 }
 #eight{
     background: conic-gradient(red,yellow,aqua,green);
@@ -52,6 +52,6 @@
         red 0deg 20deg,
         yellow 20deg 40deg
       );
-      color: white;
+      color: black;
 }
 
