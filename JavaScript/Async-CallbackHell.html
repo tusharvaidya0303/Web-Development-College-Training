@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Callback Hell 
+        function step1(fn) {
+            setTimeout(()=>{
+                console.log("Select a Photo");
+                fn()
+            },4000)
+        }
+        function step2(fn) {
+            setTimeout(()=>{
+                console.log("Captionnnn");
+                fn()
+            },3000)
+        }
+        function step3(fn) {
+            setTimeout(()=>{
+                console.log("Filterrrrrrrrrr");
+                fn()
+            },2000)
+        }
+        function step4() {
+            setTimeout(()=>{
+                console.log("Post");
+            },1000)
+        }
+        // calllback Hell
+        step1(()=>{
+            step2(()=>{
+                step3(()=>{
+                    step4()
+                })
+            })
+        })
+    </script>
+</body>
+</html>
