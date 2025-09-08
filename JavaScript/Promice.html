@@ -53,15 +53,26 @@
             },4000);
         })
         }
-            
-        step1().then(()=>{
-            return step2().then(()=>{
-                return step3().then(()=>{
-                    return step4().then()
-                })
-            })
-        })
+            // function call using .then
 
+        // step1().then(()=>{
+        //     return step2().then(()=>{
+        //         return step3().then(()=>{
+        //             return step4().then()
+        //         })
+        //     })
+        // })
+
+            // function using async await
+        
+        async function upload() {
+            await step1()
+            await step2()
+            await step3()
+            await step4()
+        }
+
+        upload()
         
         
     </script>
