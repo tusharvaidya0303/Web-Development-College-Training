@@ -11,7 +11,58 @@
         //     res()   //fulfilled
         //     // rej()   // rejected
         // })
+        // promise.then(()=>{
+        //     console.log("Fullfilled");
+            
+        // }).catch(()=>{
+        //     console.log("rejected");
+            
+        // })
         // console.log(promise,"hehehe");
+
+
+        let step1 = function(){
+            return new Promise((res,rej)=>{
+            setTimeout(() => {
+                console.log("Select a photo");
+                res()
+            },4000);
+        })
+        }
+        let step2 = function(){
+            return new Promise((res,rej)=>{
+            setTimeout(() => {
+                console.log("Captionnnnnnnn");
+                res()
+            },4000);
+        })
+        }
+        let step3 = function(){
+            return new Promise((res,rej)=>{
+            setTimeout(() => {
+                console.log("filterrrrrrrr");
+                res()
+            },4000);
+        })
+        }
+        let step4 = function(){
+            return new Promise((res,rej)=>{
+            setTimeout(() => {
+                console.log("Post");
+                res()
+            },4000);
+        })
+        }
+            
+        step1().then(()=>{
+            return step2().then(()=>{
+                return step3().then(()=>{
+                    return step4().then()
+                })
+            })
+        })
+
+        
         
     </script>
 </body>
